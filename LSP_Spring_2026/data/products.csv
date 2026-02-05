@@ -1,0 +1,13 @@
+﻿ProductID,Name,Price,Category,
+7,USB Cable,9.99,Electronics ,
+8,  Office Chair  ,150, Furniture  ,
+badid,Pen,1,Stationery ,
+14,Notebook,abc,Stationery ,
+15,TooFewFields,9.99 ,,
+16,Too,Many,Fields,Here 
+ ,,,,
+9,4K TV,1200,Electronics ,
+10,Gift Card,10,Other ,
+11,Mouse,25.555,Electronics ,
+12,Table,500,Furniture ,
+13,Camera,556,Electronics,
