@@ -140,10 +140,6 @@ public class ETLPipeline {
 					priceRange = "Premium";
 				}
 				
-				if (productId == 8) {
-				    System.out.println("DEBUG AFTER TRANSFORM:");
-				    System.out.println("NewName = >" + newName + "<");
-				}
 
 				writer.write(productId + "," + newName + "," + newPrice.toPlainString() + "," + newCategory + "," + priceRange);
 				writer.newLine();
