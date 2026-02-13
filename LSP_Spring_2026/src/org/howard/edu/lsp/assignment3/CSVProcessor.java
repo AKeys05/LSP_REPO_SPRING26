@@ -7,16 +7,51 @@ package org.howard.edu.lsp.assignment3;
 import java.io.*;
 import java.math.BigDecimal;
 
+/**
+ * Handles CSV reading, validation, and writing of transformed product data.
+ * 
+ * <p>
+ * Responsibilities:
+ * <ul>
+ *   <li>Read input CSV file line by line</li>
+ *   <li>Trim and clean whitespace (including non-breaking spaces)</li>
+ *   <li>Validate fields (skip lines with missing or invalid data)</li>
+ *   <li>Create Product objects and transform them using ProductTransformer</li>
+ *   <li>Write output CSV file including header</li>
+ *   <li>Print summary of rows read, transformed, and skipped</li>
+ * </ul>
+ * </p>
+ * 
+ */
 public class CSVProcessor {
 
     private String inputFile;
     private String outputFile;
 
+    /**
+     * Constructs a CSVProcessor with the given input and output file paths.
+     * 
+     * @param inputFile  path to the input CSV file
+     * @param outputFile path to the output CSV file
+     */
     public CSVProcessor(String inputFile, String outputFile) {
         this.inputFile = inputFile;
         this.outputFile = outputFile;
     }
-
+    
+    /**
+     * Processes the input CSV file: reads, validates, transforms, and writes the
+     * output CSV file.
+     * 
+     * <p>
+     * Skips invalid rows and prints messages to the console for:
+     * <ul>
+     *   <li>Missing or invalid ProductID</li>
+     *   <li>Missing or invalid Price</li>
+     *   <li>Incorrect number of fields</li>
+     * </ul>
+     * </p>
+     */
     public void process() {
 
         int rowsRead = 0;

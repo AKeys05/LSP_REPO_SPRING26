@@ -7,8 +7,29 @@ package org.howard.edu.lsp.assignment3;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+/**
+ * Handles all transformation logic for Product objects.
+ * 
+ * <p>
+ * This class applies transformations required by the assignment:
+ * <ul>
+ *   <li>Uppercasing the product name</li>
+ *   <li>Applying 10% discount for Electronics</li>
+ *   <li>Changing category to Premium Electronics if price exceeds 500</li>
+ *   <li>Determining PriceRange (Low, Medium, High, Premium)</li>
+ * </ul>
+ * </p>
+ * 
+ */
 public class ProductTransformer {
 	
+	/**
+     * Transforms a Product object according to the assignment rules and returns
+     * a CSV-formatted string ready for output.
+     * 
+     * @param product the Product object to transform
+     * @return CSV row string containing ProductID, Name, Price, Category, PriceRange
+     */
 	public static String transform(Product product) {
 
         // 1. Uppercase name
