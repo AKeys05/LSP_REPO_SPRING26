@@ -25,5 +25,60 @@ public class Task {
         this.description = description;
         this.status = "OPEN";
 	}
+	
+    /**
+     * Returns the unique identifier for this task.
+     *
+     * @return the task ID
+     */
+    public String getTaskId() {
+        return taskId;
+    }
+
+    /**
+     * Returns the description of this task.
+     *
+     * @return the task description
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * Returns the current status of this task.
+     *
+     * @return the task status
+     */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
+     * Updates the status of this task.
+     * Valid values are "OPEN", "IN_PROGRESS", and "COMPLETE" (case-sensitive).
+     * If the provided value is not one of the valid statuses, the status is set to "UNKNOWN".
+     *
+     * @param status the new status to assign to this task
+     */
+    public void setStatus(String status) {
+        if (status.equals("OPEN") || status.equals("IN_PROGRESS") || status.equals("COMPLETE")) {
+            this.status = status;
+        } else {
+            this.status = "UNKNOWN";
+        }
+    }
+
+    /**
+     * Returns a string representation of this task in the format:
+     * taskId description [status]
+     * <p>
+     * Example: {@code T1 Write report [OPEN]}
+     *
+     * @return formatted string representation of the task
+     */
+    @Override
+    public String toString() {
+        return taskId + " " + description + " [" + status + "]";
+    }
 
 }
