@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.strategy;
 
 /**
- * Name: Amaya Keys
+ * Name: Amaya Keys.
  * Driver class that demonstrates the Strategy-based pricing implementation.
  *
  * <p>Each customer type is paired with its corresponding {@link PricingStrategy}
