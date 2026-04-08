@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.assignment5;
+package org.howard.edu.lsp.assignment6;
 
 /**
  * Name: Amaya Keys
@@ -10,7 +10,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class IntegerSetTests {
+import org.howard.edu.lsp.assignment5.IntegerSet;
+
+public class IntegerSetTest {
 	
 	private IntegerSet set1;
     private IntegerSet set2;
