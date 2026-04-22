@@ -55,7 +55,7 @@ Student Name: Amaya Keys
 52. a
 53. c
 54. a, d
-55. a, b
+55. a, b, c
 56. c, e
 57. b
 58. d
