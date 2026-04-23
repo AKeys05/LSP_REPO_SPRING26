@@ -37,6 +37,8 @@ Enrollment: 45
 === FOOTER ===
 End of Course Report
 
+2. Help me understand more in depth the breakdown of each class.
+
 How AI Helped (2–3 sentences):
 AI helped me to break down what the base class and subclasses should be for this system, as well as what should be included within each one. It also was helpful with formatting the Driver class properly so that it matched the expected output given in the instructions.
 
