@@ -1,0 +1,3 @@
+Name: Amaya Keys
+
+Design Explanation (3-5 sentences): The Template Method was used by defining an abstract base class that owns the workflow (Report.java), and then creating CourseReport and StudentReport subclasses with their own implementation. The generateReport() method is marked as final in report.java so neither of the subclasses can reorder or skip steps. Both StudentReport and CourseReport follow the same rule of declaring studentName, gpa, courseName, and enrollment but leaving them uninitialized until loadData() runs.
