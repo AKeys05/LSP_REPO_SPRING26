@@ -28,3 +28,30 @@ Part 3:
 
 Based on Arthur Riel's heuristics, getNextId() should be private not public. The relevant heuristic states to "keep the interface of a class as minimal as possible, exposing only what outside clients genuinely need". Exposing it to the client would allow them to bypass the workflow and generate an ID independently, as well as increases the likelihood of concurrency problems due to mutual exclusion being broken. Making it private ensures ID generation and request insertion are done together.
 
+Part 4:
+
+Description: The java.util.concurrent package provides thread-safe data structures that handle synchronization internally and doesn't require the synchronized keyword. The unsafe shared resources can be replaced with concurrent-safe ones that guarantee correctness without the need for manual locking. AtomicINteger makes the ID increment atomically at the hardware level and CopyOnWriteArrayList makes each write to requests thread-safe by operating on a fresh copy of the array.
+
+
+Code Snippet:
+
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
+
+```
+public class RequestManager {
+    private AtomicInteger nextId = new AtomicInteger(1);
+    private List<String> requests = new CopyOnWriteArrayList<>();
+
+    public void addRequest(String studentName) {
+        int id = nextId.getAndIncrement();
+        requests.add("Request-" + id + " from " + studentName);
+    }
+}
+```
+
+
+
+
+
