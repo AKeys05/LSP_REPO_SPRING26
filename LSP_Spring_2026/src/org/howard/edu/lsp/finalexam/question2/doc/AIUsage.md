@@ -38,5 +38,7 @@ Enrollment: 45
 End of Course Report
 
 How AI Helped (2–3 sentences):
-AI helped 
+AI helped me to break down what the base class and subclasses should be for this system, as well as what should be included within each one. It also was helpful with formatting the Driver class properly so that it matched the expected output given in the instructions.
+
 Reflection (1–2 sentences):
+I learned how to actually put the Template Method into use and breakdown a design according to a list of given requirements.
