@@ -1,0 +1,6 @@
+Name: Amaya Keys
+
+Has your perspective on using AI in programming changed over the semester? Briefly explain.
+How do you plan to use AI in future programming or coursework?
+
+My perspective on using AI in programming has changed immensely during this semester. I had no idea of the depth and frequency that industry professionals used AI in their day-to-day operations prior to taking this semester's classes, which all of my professors this semester are. I originally only saw it as a tool for quick question answering of things that may be harder to find through the internet or for helping to study certain topics, but its capabilities extend far beyond what I was initially aware of. It can truly help you realize a project from start to finish - from helping develop a plan/outline to generating the necessary code to debugging, creating test cases, and helping to identify areas for improvement. Going forward, I will definitely continue to use AI with more of a developer mindset and not limiting it to simple, one-step tasks. Another thing it has really helped me with is developing study guides and practice tests. My favorite agent right now, Claude, has an amazing interface for completing practice question sets and receiving feedback. 
